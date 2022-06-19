@@ -12,6 +12,10 @@ function App() {
   
   }
 
+  const removeTask =()=>{
+    settasklist([])
+  }
+
 
   return (
     <div className="App">
@@ -23,6 +27,7 @@ function App() {
       }}></textArea>
       <br></br>
       <button class="btn" onClick={addTask}>Add</button>
+      <button class="btn" onClick={removeTask}>Clear All</button>
 
     <hr></hr>
     {tasklist.map((task)=>{
