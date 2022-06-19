@@ -60,6 +60,13 @@ body{
   
 }
 
+img{
+  width: 70px;
+  height: 60px;
+  padding-right: 15px;
+  padding-left: 2px;
+  margin-bottom:-12px;
+}
 
 button{
   width:90px;
@@ -67,3 +74,8 @@ button{
   border-radius: 13px;
 }
 
+
+#addbox{
+  border-radius:10px;
+  border: 1px solid white;
+}
