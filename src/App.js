@@ -26,7 +26,9 @@ function App() {
       <div id="addbox">
       <h2>Add a Task</h2>
       <textArea id="textbox" cols="60" rows="8" onChange={(event)=>{
+        if(event!==''){
         settask(event.target.value);
+        }
       }}></textArea>
       <br></br>
       <button class="btn" onClick={addTask}>Add</button>
@@ -35,16 +37,22 @@ function App() {
       <br></br>
       </div>
 
-
     
+    
+
     {tasklist.map((task)=>{
-      return( 
-        <div class="box">
-          <h4>{task}</h4> 
-        </div>
-      
-      )
-     })}
+      if(task!==''){
+        return( 
+          <div class="box">
+            <h4>{task}</h4> 
+          </div>
+        
+        )
+      }
+       })
+    }
+    
+    
   
     
     
